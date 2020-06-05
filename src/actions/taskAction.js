@@ -12,3 +12,10 @@ export const deleteTask = (id) => {
         payload: id
     };
 };
+
+export const addTask = task => {
+    return {
+        type: ADD_TASK,
+        payload: task
+    };
+};

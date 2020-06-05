@@ -5,6 +5,8 @@ import store from './store';
 
 import AppBar from './components/AppBar';
 import TasksList from './components/TasksList';
+import TaskModal from './components/TaskModal';
+import { Container } from 'reactstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -14,7 +16,10 @@ function App() {
     <Provider store={store}>
     <div className="App">
         <AppBar />
-        <TasksList />
+        <Container>
+          <TaskModal />
+          <TasksList />
+        </Container>
     </div>
     </Provider>
   );
