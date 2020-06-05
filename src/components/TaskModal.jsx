@@ -11,7 +11,6 @@ import {
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addTask } from '../actions/taskAction';
-import { v4 as uuidv4 } from 'uuid';
 
 class TaskModal extends Component {
     state= {
@@ -33,7 +32,6 @@ class TaskModal extends Component {
         e.preventDefault();
 
         const newTask = {
-            id: uuidv4(),
             name: this.state.name
         }
 
